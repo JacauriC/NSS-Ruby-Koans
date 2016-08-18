@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 class AboutStrings < Neo::Koan
   def test_double_quoted_strings_are_strings
     string = "Hello, World"
-    assert_equal __, string.is_a?(String)
+    assert_equal true, string.is_a?(String)
   end
 
   def test_single_quoted_strings_are_also_strings
@@ -12,7 +12,7 @@ class AboutStrings < Neo::Koan
   end
 
   def test_use_single_quotes_to_create_string_with_double_quotes
-    string = 'He said, "Go Away."'
+    string = 'falseaid, "Go Away."'
     assert_equal __, string
   end
 
